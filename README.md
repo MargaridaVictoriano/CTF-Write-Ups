@@ -18,4 +18,8 @@ I decided to use binwalk to extract all components of the file.
 > binwalk --dd='.*' flag.png
 
 I did not found anything particularly useful so I tried taking another look at the .dd file.
-I used testdisk and I found 
+I used testdisk and I found this :
+
+![alt tag](https://github.com/MargaridaVictoriano/CTF-Write-Ups/blob/master/testdisk.png)
+
+As we can see, we have three .png that simply ilustrate the CTF organizer logo (http://pwning.net/)
