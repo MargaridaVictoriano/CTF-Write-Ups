@@ -42,7 +42,7 @@ I merged the strings and I got *Spac3ei2herE*.
 I inserted this on the encoded .RAR file and it was the correct password.
 I got the following image:
 
-![alt tag](https://github.com/MargaridaVictoriano/CTF-Write-Ups/blob/master/pflag.png)
+![alt tag](https://github.com/MargaridaVictoriano/CTF-Write-Ups/blob/master/pppflag.png)
 
 
 **Flag:**
