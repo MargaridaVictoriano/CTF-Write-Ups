@@ -10,7 +10,9 @@ We were given a .dd file so the first thing I tried to do was to mount the disk 
 
 After mounting the disk image, the only thing that I found was the following image:
 
+
  ![alt tag](https://github.com/MargaridaVictoriano/CTF-Write-Ups/blob/master/flag.png)
+ 
 
 In spite of being called flag.png, it did not contain the flag so I had to keep looking.
 I decided to use binwalk to extract all the components of the file.
@@ -20,9 +22,11 @@ I decided to use binwalk to extract all the components of the file.
 I did not found anything particularly useful so I tried taking another look at the .dd file.
 I used testdisk and I found this :
 
+
 ![alt tag](https://github.com/MargaridaVictoriano/CTF-Write-Ups/blob/master/testdisk.png)
 
-The three .png files were equal and they all represented the organizer team logo (http://pwning.net/).
+
+The three .PNG files were equal and they all represented the organizer team logo (http://pwning.net/).
 I used some steganography tools but I did not discover anything relevant.
 There was a space.rar file but it was encoded with a password.
 I decided to try to crack the password using *John the Ripper*. While it was running, I decided to take a look at the raw hex of the P/PP/PPP.png file data. On each PNG I found this:
@@ -35,7 +39,9 @@ I decided to try to crack the password using *John the Ripper*. While it was run
 
 I found it curious that there was a string containing *Spac* because it resembled to the name of the challenge. I found the string near the > IEND footer of the PNG so I checked the other PNG's as well.
 I merged the strings and I got *Spac3ei2herE*. I inserted this on the encoded .RAR file and it was the correct password.I got the following image:
+
 ![alt tag](https://github.com/MargaridaVictoriano/CTF-Write-Ups/blob/master/pflag.png)
 
-*Flag:*
+
+**Flag:**
 > PCTF{2pac3_3v34ry_wh3r3}
