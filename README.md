@@ -2,7 +2,7 @@
 
 https://ctftime.org/event/743
 
--- Space Saver (misc 100p) --
+**Space Saver (*misc 100p*) **
 
 We were given a .dd file so the first thing I tried to do was to mount the disk image using the following command :
 
@@ -13,3 +13,9 @@ After mounting the disk image, the only thing that I could found the following i
  ![alt tag](https://github.com/MargaridaVictoriano/CTF-Write-Ups/blob/master/flag.png)
 
 In spite of being called flag.png, it did not contain the flag so I had to keep looking.
+I decided to use binwalk to extract all components of the file.
+
+> binwalk --dd='.*' flag.png
+
+I did not found anything particularly useful so I tried taking another look at the .dd file.
+I used testdisk and I found 
