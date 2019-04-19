@@ -44,6 +44,5 @@ I got the following image:
 
 ![alt tag](https://github.com/MargaridaVictoriano/CTF-Write-Ups/blob/master/pflag.png)
 
-
 **Flag:**
 > PCTF{2pac3_3v34ry_wh3r3}
