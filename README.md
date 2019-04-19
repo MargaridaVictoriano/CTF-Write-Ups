@@ -19,7 +19,7 @@ I decided to use binwalk to extract all the components of the file.
 
 > binwalk --dd='.*' flag.png
 
-I did not found anything particularly useful so I tried taking another look at the .dd file.
+I did not find anything particularly useful so I tried taking another look at the .dd file.
 I used testdisk and I found this :
 
 
